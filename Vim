@@ -1,0 +1,87 @@
+Introduction:
+Vim is a text editor, just like sublime text, visual studio code, brackets and is usually much faster than most text editors as it uses hjkl, to move around, it uses several commands to get around and use the vim interface. Under this, I have listed the commands that are mainly used:
+
+
+
+
+GENERAL
+:help keyword = open help for keyword
+:o file       = open file
+:q!  = force quit
+:wq        = save quit
+
+
+
+CURSOR MOVEMENT
+h        = move cursor left
+j        = move cursor down
+k        = move cursor up
+l        = move cursor right
+H        = move to top of screen
+M        = move to middle of screen
+L        = move to bottom of screen
+w        = moves forwards to the start of a word
+W        = moves forwards to the start of a word
+e        = moves forwards to the end of a word
+E        = moves forwards to the end of a word
+b        = moves backwards to the start of a word
+B        = moves backwards to the start of a word (words can contain punctuation)
+0        = moves to the start of the line
+^        = moves to the first non-blank character of the line
+$        = moves to the end of the line
+g_       = moves to the last non-blank character of the line
+gg       = go to the first line of the document
+G        = go to the last line of the document
+5G       = go to line 5
+fx       = moves to next occurrence of character x
+tx       = moves to before next occurrence of character x
+}        = moves to next paragraph (or function/block, when editing code)
+{        = moves to previous paragraph (or function/block, when editing code)
+zz       = center cursor on screen
+Ctrl + b = move back one full screen
+
+
+
+INSERT MODE
+i        = insert before the cursor
+I        = insert at the beginning of the line
+a        = insert (append) after the cursor
+A        = insert (append) at the end of the line
+o        = append (open) a new line below the current line
+O        = append (open) a new line above the current line
+ea       = insert (append) at the end of the word
+Esc      = exit insert mode
+
+
+
+EDITING
+r        = replace a single character
+J        = join line below to the current one
+cc       = change (replace) entire line
+cw       = change (replace) to the start of the next word
+ce       = change (replace) to the end of the next word
+cb       = change (replace) to the start of the previous word
+c0       = change (replace) to the start of the line
+c$       = change (replace) to the end of the line
+s        = delete character and substitute text
+S        = delete line and substitute text (same as cc)
+
+
+
+VISUAL COMMANDS
+>       = shift text right
+<      = shift text left
+y       = yank (copy) marked text
+d       = delete marked text
+~      = switch case
+
+
+
+Search through multiple files
+:vimgrep /pattern/ {file} = search for pattern in multiple files
+:cn                       = jump to the next match
+:cp                       = jump to the previous match
+:copen                    = open a window containing the list of matches
+
+
+
